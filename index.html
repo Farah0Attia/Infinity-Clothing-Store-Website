@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Infinity Store — timeless style for every day.">
+  <title>Infinity Store | Fashion for Everyone</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">infinity<span>.</span></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#collection" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Collection</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="winter.html">Winter Collection</a></li>
+              <li><a class="dropdown-item" href="summer.html">Summer Collection</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        </ul>
+
+        <!-- Right side actions -->
+        <div class="navbar-right d-flex align-items-center gap-3">
+          <div class="dropdown">
+            <button class="btn language-btn dropdown-toggle" type="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-globe me-1"></i> EN
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">العربية</a></li>
+            </ul>
+          </div>
+          <a class="nav-icon" href="#bestsellers" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a class="nav-icon" href="#bestsellers" aria-label="Shopping bag"><i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO CAROUSEL -->
+  <main id="home">
+    <section class="hero-section">
+      <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=2000&q=85" class="d-block w-100 hero-img" alt="Fashion shopping and style">
+            <div class="hero-shade"></div>
+            <div class="carousel-caption hero-caption text-start">
+              <p class="eyebrow">NEW SEASON · NEW ENERGY</p>
+              <h1>Wear your<br><em>own story.</em></h1>
+              <p>Discover pieces that make every day feel extraordinary.</p>
+              <a href="#bestsellers" class="btn btn-dark rounded-pill px-4 py-3">Shop now <i class="fa-solid fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=2000&q=85" class="d-block w-100 hero-img" alt="Modern seasonal fashion">
+            <div class="hero-shade"></div>
+            <div class="carousel-caption hero-caption text-start">
+              <p class="eyebrow">THE LATEST EDIT</p>
+              <h1>Style that feels<br><em>like you.</em></h1>
+              <p>Find your new favourites in our latest collection.</p>
+              <a href="#collection" class="btn btn-dark rounded-pill px-4 py-3">Explore collection <i class="fa-solid fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=2000&q=85" class="d-block w-100 hero-img" alt="Contemporary fashion look">
+            <div class="hero-shade"></div>
+            <div class="carousel-caption hero-caption text-start">
+              <p class="eyebrow">INFINITY ESSENTIALS</p>
+              <h1>Everyday looks.<br><em>Endless style.</em></h1>
+              <p>Timeless essentials, chosen just for you.</p>
+              <a href="#bestsellers" class="btn btn-dark rounded-pill px-4 py-3">Discover more <i class="fa-solid fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev" aria-label="Previous">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next" aria-label="Next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- COLLECTION BANNERS -->
+    <section class="section-padding" id="collection">
+      <div class="container">
+        <div class="section-heading text-center">
+          <p class="eyebrow">FIND YOUR INFINITY</p>
+          <h2>Collections for every season</h2>
+          <p class="section-subtitle">Fresh looks for wherever life takes you.</p>
+        </div>
+
+        <div class="row g-4 mt-3">
+          <div class="col-md-6" id="winter">
+            <a href="#bestsellers" class="collection-card">
+              <img src="https://images.unsplash.com/photo-1548126032-079a0fb0099d?auto=format&fit=crop&w=1000&q=85" alt="Winter fashion collection">
+              <div class="collection-card-text">
+                <span>THE COLD-WEATHER EDIT</span>
+                <h3>Winter Collection</h3>
+                <span class="collection-cta">Shop winter <i class="fa-solid fa-arrow-right ms-2"></i></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6" id="summer">
+            <a href="#bestsellers" class="collection-card">
+              <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=1000&q=85" alt="Summer fashion collection">
+              <div class="collection-card-text">
+                <span>SUNNY-DAY ESSENTIALS</span>
+                <h3>Summer Collection</h3>
+                <span class="collection-cta">Shop summer <i class="fa-solid fa-arrow-right ms-2"></i></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BESTSELLERS -->
+    <section class="section-padding bg-light-soft" id="bestsellers">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-end">
+          <div class="section-heading">
+            <p class="eyebrow">THE CROWD FAVOURITES</p>
+            <h2>Best sellers</h2>
+            <p class="section-subtitle">The pieces everyone is loving right now.</p>
+          </div>
+          <a href="#product-week" class="text-link mb-3">View collection <i class="fa-solid fa-arrow-right ms-2"></i></a>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-6 col-lg-3">
+            <article class="product-card">
+              <div class="product-image">
+                <span class="product-label">BESTSELLER</span>
+                <img src="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=85" alt="Neutral everyday jacket">
+                <button class="add-to-cart" type="button" aria-label="Add Everyday Overshirt to bag"><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <div class="product-info"><p class="product-category">OUTERWEAR</p><h3>Everyday Overshirt</h3><p class="product-price">$58.00</p></div>
+            </article>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <article class="product-card">
+              <div class="product-image">
+                <span class="product-label">POPULAR</span>
+                <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=800&q=85" alt="Classic white shirt">
+                <button class="add-to-cart" type="button" aria-label="Add Classic Shirt to bag"><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <div class="product-info"><p class="product-category">TOPS</p><h3>Classic Cotton Shirt</h3><p class="product-price">$42.00</p></div>
+            </article>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=85" alt="Blue denim jeans">
+                <button class="add-to-cart" type="button" aria-label="Add Relaxed Denim to bag"><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <div class="product-info"><p class="product-category">BOTTOMS</p><h3>Relaxed Denim</h3><p class="product-price">$64.00</p></div>
+            </article>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <article class="product-card">
+              <div class="product-image">
+                <span class="product-label">NEW</span>
+                <img src="https://images.unsplash.com/photo-1566206091558-7f218b696731?auto=format&fit=crop&w=800&q=85" alt="Minimal summer dress">
+                <button class="add-to-cart" type="button" aria-label="Add The Weekend Dress to bag"><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <div class="product-info"><p class="product-category">DRESSES</p><h3>The Weekend Dress</h3><p class="product-price">$72.00</p></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT OF THE WEEK -->
+    <section class="section-padding" id="product-week">
+      <div class="container">
+        <div class="row align-items-center g-5 product-week">
+          <div class="col-lg-6">
+            <div class="product-week-image">
+              <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=1200&q=85" alt="Featured neutral fashion jacket">
+              <span class="week-sticker">THIS WEEK'S<br>FAVOURITE</span>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <p class="eyebrow">HAND-PICKED FOR YOU</p>
+            <h2>Product of<br>the <em>week.</em></h2>
+            <h3 class="featured-name">The Everyday Jacket</h3>
+            <p class="featured-description">Your new go-to layer. Easy to style, comfortable to wear, and made to take you from weekday plans to weekend adventures.</p>
+            <div class="featured-price">$89.00 <span>$110.00</span></div>
+            <a href="#contact" class="btn btn-dark rounded-pill px-5 py-3 mt-3">Shop this item <i class="fa-solid fa-arrow-right ms-2"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4" id="about">
+          <a class="footer-logo" href="index.html">infinity<span>.</span></a>
+          <p class="footer-about">Style is personal. At Infinity Store, we bring together everyday essentials and statement pieces to help you express who you are.</p>
+          <div class="social-links d-flex gap-3">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Explore</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#collection">Collections</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#product-week">Featured</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Help</h5>
+          <ul class="footer-links">
+            <li><a href="#contact">Contact us</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h5>Stay in the loop</h5>
+          <p class="newsletter-text">Get updates on new arrivals and special offers.</p>
+          <form class="newsletter-form d-flex" id="newsletterForm">
+            <label for="emailInput" class="visually-hidden">Your email address</label>
+            <input type="email" id="emailInput" class="form-control" placeholder="Your email address" required>
+            <button class="btn" type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+          </form>
+          <p class="newsletter-message" id="newsletterMessage" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+        <p class="mb-0">© 2026 Infinity Store. All rights reserved.</p>
+        <p class="mb-0">Made for your everyday.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
